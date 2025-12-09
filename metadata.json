@@ -1,0 +1,7 @@
+{
+  "name": "Grand Luxury Interactive Christmas Tree",
+  "description": "A high-fidelity, luxury 3D interactive Christmas tree experience with Gemini-powered gesture control.",
+  "requestFramePermissions": [
+    "camera"
+  ]
+}

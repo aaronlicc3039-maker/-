@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Grand Luxury Christmas Tree</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              gold: {
+                100: '#FFF9C4',
+                300: '#FFF176',
+                500: '#FFD700',
+                700: '#FBC02D',
+                900: '#F57F17',
+              },
+              emerald: {
+                800: '#064E3B',
+                900: '#022C22',
+                950: '#011C16', // Deepest luxury green
+              }
+            },
+            fontFamily: {
+              serif: ['"Playfair Display"', 'serif'],
+            },
+            animation: {
+              'glow': 'glow 3s ease-in-out infinite alternate',
+            },
+            keyframes: {
+              glow: {
+                '0%': { textShadow: '0 0 10px #FFD700, 0 0 20px #F57F17' },
+                '100%': { textShadow: '0 0 20px #FFF176, 0 0 30px #FFD700' },
+              }
+            }
+          },
+        },
+      }
+    </script>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap');
+      body { margin: 0; background-color: #000; overflow: hidden; }
+      /* Custom scrollbar for webkit */
+      ::-webkit-scrollbar { width: 0px; background: transparent; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "@react-three/postprocessing": "https://aistudiocdn.com/@react-three/postprocessing@^3.0.4",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.32.0",
+    "react/": "https://aistudiocdn.com/react@^19.2.1/",
+    "react": "https://aistudiocdn.com/react@^19.2.1",
+    "@react-three/drei": "https://aistudiocdn.com/@react-three/drei@^10.7.7",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.1/",
+    "@react-three/fiber": "https://aistudiocdn.com/@react-three/fiber@^9.4.2",
+    "three": "https://aistudiocdn.com/three@^0.181.2"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
